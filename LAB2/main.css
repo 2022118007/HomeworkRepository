@@ -1,0 +1,81 @@
+body {
+    font-size: medium; 
+    font-family: sans-serif; 
+}
+
+.menu {margin: 1.5rem;}
+.dummy {text-decoration: underline;}
+
+.middle {text-align: center;}
+
+.line {
+    padding: 0.1rem;
+}
+
+.line p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0.23rem;
+}
+
+.lefttext {
+    width: 10vw;
+    font-size: medium;
+}
+
+.left {
+    text-align: left;
+}
+
+.inputbox::-webkit-calendar-picker-indicator {
+    margin: 0 -14rem 0 0;
+    padding: 0;
+}
+
+.input {
+    width: 15rem; 
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.radio {
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.inputbox {
+    align-items: center;
+    padding: 0.4rem 0.2rem 0.4rem 0.2rem; margin: 0 auto;
+}
+.inputradio {
+    padding: 0.4rem 0.2rem;
+    margin: 0;
+}
+.center {
+    margin: 0 auto;
+}
+.box {
+    border: 0.2rem solid black; 
+    width: 25rem; 
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 10vw 2vh 6vw; 
+}
+.btn {
+    border: 0;
+    width: 8rem;
+    height: 2.3rem;
+    font-size: medium; 
+    margin: 1rem 0 0.8rem; 
+    padding: 0.8rem 0.3rem 0.3rem;
+    border-radius: 15%;
+}
+
+.btnsec{
+    margin: 1rem 0 0.8rem 1rem 
+}
+
+.green {background-color: rgb(175, 255, 182); color:black;}
+.red {background-color: red; color: white;}
