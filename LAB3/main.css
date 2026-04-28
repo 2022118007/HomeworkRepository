@@ -225,7 +225,7 @@ hr {
 
 .main-text {
     display: block; 
-    width: calc(100%-20px);
+    width: calc(100% - 20px);
     margin: 0 auto;
     column-count: 2;
     column-gap: 40px;
