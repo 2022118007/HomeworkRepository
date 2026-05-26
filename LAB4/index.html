@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<script>
+
+function generate_icon(name, imgpath, alt, lines, lang, genre, date, rate){
+    const icon = `
+        <div class="icon-p">
+            <img class="icon" src="${imgpath}" alt="${alt}">
+            <div class="icon-text">줄거리:<br>${lines}</div>
+            <div class="infos">&lt;${name}&gt;<br>🗓️${date}<br>⭐${rate}/10<br>🎬${genre}</div>
+        </div>
+    `;
+    return icon;
+}
+
+
+
+let allMovies = []; 
+let sortedData = [];
+let current = 0;
+let batchSize = 4;
+let currentKeyword = "";
+let currentOption = "";
+
+function loadData() {
+    fetch("product.json")
+        .then((response) => response.json())
+        .then((json) => {
+            allMovies = json.movies;
+            sort(""); // do nothing
+        });
+}
+
+function search() {
+    const keyword = document.querySelector('#search-input').value.trim().toLowerCase();
+    
+    currentKeyword = keyword;
+    
+    sort(currentOption); 
+}
+
+function init() {
+    document.querySelector('#sectionA').innerHTML = "";
+    current = 0;
+}
+
+function sort(option) {
+    if (allMovies.length === 0) return;
+    currentOption = option;
+    init();
+
+    let filteredData = [...allMovies].filter(m => {
+        return m.name.toLowerCase().includes(currentKeyword);
+    });
+
+    switch (option) {
+        case "rate_down":
+            sortedData = filteredData.sort((a, b) => a.rate - b.rate);
+            break;
+        case "rate_up":
+            sortedData = filteredData.sort((a, b) => b.rate - a.rate);
+            break;
+        case "date_down":
+            sortedData = filteredData.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+            break;
+        case "date_up":
+            sortedData = filteredData.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+            break;
+        default:
+            sortedData = filteredData;
+            break;
+    }
+    
+
+    batch_add();
+}
+
+function batch_add() {
+    const nextLimit = current + batchSize;
+    
+    for (let i = current; i < nextLimit; i++) {
+        if (sortedData.length > i) {
+            let m = sortedData[i];
+            document.querySelector('#sectionA').innerHTML += generate_icon(
+                m.name, m.img, m.name, m.lines, m.lang, m.genre, m.date, m.rate
+            );
+            current++;
+        }
+    }
+}
+
+window.onscroll = () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        if (current < sortedData.length) {
+            batch_add(); 
+        }
+    }
+}
+
+loadData();
+
+</script>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title> LAB 3 - Home</title>
+        <link rel="stylesheet" type="text/css" href = "main.css">
+    </head>
+    <body>
+        <h1 class="titletext">인프밍 영화 정보 사이트입니다.</h1>
+        <div class="middle menu">
+            <nav>
+                <ul class="navbar">
+                    <li><a class="navitem selected" href="index.html">메인페이지</a></li>
+                    <li><a class="navitem" href="login.html">로그인</a></li>
+                    <li><a class="navitem" href="signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+            <hr class="navhr">
+        </div>
+        <div class="section-1">
+            <div class="sections">
+            <div class="section0">
+            <div>
+                <div class="search">
+                    <input id="search-input" class="searchbar" type="text" placeholder="키워드를 입력하세요." autofocus> <button onclick="search()" class="searchbtn" >Filter results</button>
+                </div>
+                
+                <h2 class="subtitle">Movies</h2>
+            </div>
+            <hr>
+            <div class="section1" >
+                <div class="section2">
+                    <div class="graybox">
+                    <h3>정렬 기준</h1>
+                        <input name="sort_opt" type="radio" value="rate_up" onchange="sort(this.value)">평점 내림차순 <br>
+                        <input name="sort_opt" type="radio" value="rate_down" onchange="sort(this.value)">평점 오름차순 <br>
+                        <input name="sort_opt" type="radio" value="date_up" onchange="sort(this.value)">개봉 내림차순 <br>
+                        <input name="sort_opt" type="radio" value="date_down" onchange="sort(this.value)">개봉 오름차순
+                </div>
+            </div>
+                <div id="sectionA" class="section3 bordered">
+                    
+                </div>
+            </div>
+    </body>
+</html>

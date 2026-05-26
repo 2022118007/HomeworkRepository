@@ -1,0 +1,205 @@
+{
+    "movies":[
+        {
+            "id": 1,
+            "genre": "Animation, Adventure, Family",
+            "lang": "en",
+            "rate": 8,
+            "date":"1985-07-03",
+            "name": "Back To The Future",
+            "img":"imgs/back_to_the_future.jpg",
+            "lines":"Cast, crew, and fans explore the classic Back to the Future time-travel trilogy's resonance throughout our culture 30 years after Marty went back in time."
+        },
+        {
+            "id": 2,
+            "genre": "Action, Adventure, Comedy",
+            "lang": "en",
+            "rate": 7.4,
+            "date":"2016-02-09",
+            "img":"imgs/deadpool.jpg",
+            "name": "Deadpool",
+            "lines":"Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life."
+        },
+        {
+            "id": 3,
+            "genre": "TV Movie, Animation, Family",
+            "lang": "en",
+            "rate": 6,
+            "date":"2015-11-22",
+            "img":"imgs/Disney_The_Lion_King_2019.jpg",
+            "name": "The Lion King",
+            "lines":"Timon the meerkat and Pumbaa the warthog are best pals and the unsung heroes of the African savanna. This prequel to the smash Disney animated adventure takes you back -- way back -- before Simba's adventure began. You'll find out all about Timon and Pumbaa and tag along as they search for the perfect home and attempt to raise a rambunctious lion cub."
+        },
+        {
+            "id": 4,
+            "genre": "Adventure, Fantasy, Family",
+            "lang": "en",
+            "rate": 6.9,
+            "date":"1995-12-15",
+            "img":"imgs/jumanji.jpg",
+            "name": "Jumanji",
+            "lines":"When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been trapped inside the game for 26 years -- into their living room. Alan's only hope for freedom is to finish the game, which proves risky as all three find themselves running from giant rhinoceroses, evil monkeys and other terrifying creatures."
+        },
+        {
+            "id": 5,
+            "genre": "Animation, Family",
+            "lang": "en",
+            "rate": 7.4,
+            "date":"2010-11-24",
+            "img":"imgs/tangled.jpg",
+            "name": "Tangled",
+            "lines":"When the kingdom's most wanted-and most charming-bandit Flynn Rider hides out in a mysterious tower, he's taken hostage by Rapunzel, a beautiful and feisty tower-bound teen with 70 feet of magical, golden hair. Flynn's curious captor, who's looking for her ticket out of the tower where she's been locked away for years, strikes a deal with the handsome thief and the unlikely duo sets off on an action-packed escapade, complete with a super-cop horse, an over-protective chameleon and a gruff gang of pub thugs."
+        },
+        {
+            "id": 6,
+            "genre": "Animation, Comedy, Family",
+            "lang": "en",
+            "rate": 7.7,
+            "date":"1995-10-30",
+            "img":"imgs/toy_story.jpg",
+            "name": "Toy Story",
+            "lines":"Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences."
+        },
+        {
+            "id": 7,
+            "genre": "Romance, Comedy",
+            "lang": "en",
+            "rate": 6.5,
+            "date":"1995-12-22",
+            "img":"imgs/Grumpier Old Men.jpg",
+            "name": "Grumpier Old Men",
+            "lines":"A family wedding reignites the ancient feud between next-door neighbors and fishing buddies John and Max. Meanwhile, a sultry Italian divorc챕e opens a restaurant at the local bait shop, alarming the locals who worry she'll scare the fish away. But she's less interested in seafood than she is in cooking up a hot time with Max."
+        },
+        {
+            "id": 8,
+            "genre": "Drama, War",
+            "lang": "en",
+            "rate": 8.1,
+            "date":"2002-09-24",
+            "img":"imgs/the_pianist.jpeg",
+            "name": "The Pianist",
+            "lines":"The Pianist is a film adapted from the biography of Wladyslaw Szpilman. A Jewish-Polish pianist who during the second world war lived and hid miraculously in Warsaw after having gone through a terrible tragedy. A film from Roman Polanski."
+        },
+        {
+            "id": 9,
+            "genre": "Comedy, Drama, Romance",
+            "lang": "en",
+            "rate": 6.1,
+            "date":"1995-12-22",
+            "img":"imgs/Waiting to Exhale.jpg",
+            "name": "Waiting to Exhale",
+            "lines":"Cheated on, mistreated and stepped on, the women are holding their breath, waiting for the elusive 'good man' to break a string of less-than-stellar lovers. Friends and confidants Vannah, Bernie, Glo and Robin talk it all out, determined to find a better way to breathe."
+        },
+        {
+            "id": 10,
+            "genre": "Comedy",
+            "lang": "en",
+            "rate": 5.7,
+            "date":"1995-02-10",
+            "img":"imgs/Father of the Bride Part II.jpg",
+            "name": "Father of the Bride Part II",
+            "lines":"Just when George Banks has recovered from his daughter's wedding, he receives the news that she's pregnant ... and that George's wife, Nina, is expecting too. He was planning on selling their home, but that's a plan that -- like George -- will have to change with the arrival of both a grandchild and a kid of his own."
+        },
+        {
+            "id": 11,
+            "genre": "Action, Crime, Drama, Thriller",
+            "lang": "en",
+            "rate": 7.7,
+            "date":"1995-12-15",
+            "img":"imgs/Heat.jpg",
+            "name": "Heat",
+            "lines":"Obsessive master thief, Neil McCauley leads a top-notch crew on various insane heists throughout Los Angeles while a mentally unstable detective, Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence."
+        },
+        {
+            "id": 12,
+            "genre": "Comedy, Romance",
+            "lang": "en",
+            "rate": 6.2,
+            "date":"1995-12-15",
+            "img":"imgs/Sabrina.jpg",
+            "name": "Sabrina",
+            "lines":"An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother has something to say about it."
+        },
+        {
+            "id": 13,
+            "genre": "Action, Adventure, Drama, Family",
+            "lang": "en",
+            "rate": 5.4,
+            "date":"1995-12-22",
+            "img":"imgs/Tom and Huck.jpg",
+            "name": "Tom and Huck",
+            "lines":"A mischievous young boy, Tom Sawyer, witnesses a murder by the deadly Injun Joe. Tom becomes friends with Huckleberry Finn, a boy with no future and no family. Tom has to choose between honoring a friendship or honoring an oath because the town alcoholic is accused of the murder. Tom and Huck go through several adventures trying to retrieve evidence."
+        },
+        {
+            "id": 14,
+            "genre": "Action, Adventure, Thriller",
+            "lang": "en",
+            "rate": 5.5,
+            "date":"1995-12-22",
+            "img":"imgs/Sudden Death.jpg",
+            "name": "Sudden Death",
+            "lines":"International action superstar Jean Claude Van Damme teams with Powers Boothe in a Tension-packed, suspense thriller, set against the back-drop of a Stanley Cup game.Van Damme portrays a father whose daughter is suddenly taken during a championship hockey game. With the captors demanding a billion dollars by game's end, Van Damme frantically sets a plan in motion to rescue his daughter and abort an impending explosion before the final buzzer..."
+        },
+        {
+            "id": 15,
+            "genre": "Adventure, Action, Thriller",
+            "lang": "en",
+            "rate": 6.6,
+            "date":"1995-11-16",
+            "img":"imgs/GoldenEye.jpg",
+            "name": "GoldenEye",
+            "lines":"James Bond must unmask the mysterious head of the Janus Syndicate and prevent the leader from utilizing the GoldenEye weapons system to inflict devastating revenge on Britain."
+        },
+        {
+            "id": 16,
+            "genre": "Comedy, Drama, Romance",
+            "lang": "en",
+            "rate": 6.5,
+            "date":"1995-11-17",
+            "img":"imgs/The American President.jpg",
+            "name": "The American President",
+            "lines":"Widowed U.S. president Andrew Shepherd, one of the world's most powerful men, can have anything he wants -- and what he covets most is Sydney Ellen Wade, a Washington lobbyist. But Shepherd's attempts at courting her spark wild rumors and decimate his approval ratings."
+        },
+        {
+            "id": 17,
+            "genre": "Comedy, Horror",
+            "lang": "en",
+            "rate": 5.7,
+            "date":"1995-12-22",
+            "img":"imgs/Dracula Dead and Loving It.jpg",
+            "name": "Dracula: Dead and Loving It",
+            "lines":"When a lawyer shows up at the vampire's doorstep, he falls prey to his charms and joins him in his search for fresh blood. Enter Dr. van Helsing, who may be the only one able to vanquish the count."
+        },
+        {
+            "id": 18,
+            "genre": "Family, Animation, Adventure",
+            "lang": "en",
+            "rate": 7.1,
+            "date":"1995-12-22",
+            "img":"imgs/Balto.jpg",
+            "name": "Balto",
+            "lines":"An outcast half-wolf risks his life to prevent a deadly epidemic from ravaging Nome, Alaska."
+        },
+        {
+            "id": 19,
+            "genre": "History, Drama",
+            "lang": "en",
+            "rate": 7.1,
+            "date":"1995-12-22",
+            "img":"imgs/Nixon.jpg",
+            "name": "Nixon",
+            "lines":"An all-star cast powers this epic look at American President Richard M. Nixon, a man carrying the fate of the world on his shoulders while battling the self-destructive demands within. Spanning his troubled boyhood in California to the shocking Watergate scandal that would end his presidency."
+        },
+        {
+            "id": 20,
+            "genre": "Action, Adventure",
+            "lang": "en",
+            "rate": 5.7,
+            "date":"1995-12-22",
+            "img":"imgs/Cutthroat Island.jpg",
+            "name": "Cutthroat Island",
+            "lines":"Morgan Adams and her slave, William Shaw, are on a quest to recover the three portions of a treasure map. Unfortunately, the final portion is held by her murderous uncle, Dawg. Her crew is skeptical of her leadership abilities, so she must complete her quest before they mutiny against her. This is made yet more difficult by the efforts of the British crown to end her pirate raids."
+        }
+    ]
+}
+
